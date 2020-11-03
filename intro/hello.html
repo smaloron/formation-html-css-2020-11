@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ma première page HTML</title>
+    <meta charset="utf-8">
+    <!-- Balise style -->
+    <style>
+        /*********************************** 
+         * Un style CSS qui s'applique à h1
+        ************************************/
+        h1 {
+            color: blueviolet;
+            font-size: 72px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong, em, li {
+            color: red;
+            font-weight: bold;
+        }
+
+        strong {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 28px;
+        }
+
+        /* Cibler un id */
+        #intro {
+            font-style: italic;
+            color: green;
+        }
+
+        .warning {
+            color: orange;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gros titre</h1>
+    <h6 class="warning">Petit titre</h6>
+    <div>
+        <strong>tel</strong> : 01-65-45-98-12 <br>
+        <em>email</em> : moi@moi.com
+
+    </div>
+    <p id="intro">Pour créer une fonction on utilise l'instruction <code>function</code></p>
+
+    <p>
+        Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine
+        abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint,
+        erubescas. <span class="warning">Quis est enim</span>, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit
+        petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te
+        agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.
+        
+        Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule missae sub iugum factae sunt
+        vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo monte Amano disparantur.
+        
+        Dum haec in oriente aguntur, Arelate hiemem agens Constantius post theatralis ludos atque circenses ambitioso editos
+        apparatu diem sextum idus Octobres, qui imperii eius annum tricensimum terminabat, insolentiae pondera gravius librans,
+        siquid dubium deferebatur aut falsum, pro liquido accipiens et conperto, inter alia excarnificatum Gerontium
+        Magnentianae comitem partis exulari maerore multavit.
+
+    </p>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="warning">SQL</li>
+    </ol>
+
+    <a href="/pages/page-2.html"  target="site">Lien vers la page 2</a>
+
+    <a href="http://127.0.0.1:5500/pages/page-2.html"  target="site">Autre lien vers la page 2</a>
+
+    <a href="http://www.google.com" target="site">lien vers Google</a>
+
+    <img src="../images/HTML_logo.png" alt="logo html 5">
+
+
+    <!---------------------------------  
+    --    Ici le tableau des prix    --
+    ------------------------------------>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Ces livres sont à lire sans modération</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Informatique</td>
+                <td>HTML pour les nuls </td>
+                <td>Joe Code Quickly</td>
+                <td>30 €</td>
+            </tr>
+
+            <tr>
+                <td>SQL for smarties</td>
+                <td>Joe Celko</td>
+                <td>36 €</td>
+            </tr>
+
+            <tr>
+                <td>Coder proprement</td>
+                <td>Kent Beck</td>
+                <td>16 €</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Romans</td>
+                <td>La maison aux esprits </td>
+                <td>Isabel Allende</td>
+                <td>15 €</td>
+            </tr>
+            
+            <tr>
+                <td>Les Misérables</td>
+                <td>Victor Hugo</td>
+                <td>10 €</td>
+            </tr>
+            
+            <tr>
+                <td>20 000 lieues sous les mers</td>
+                <td>Jules Verne</td>
+                <td>16 €</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+</body>
+
+</html>
+

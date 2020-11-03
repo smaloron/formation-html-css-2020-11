@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier formulaire</title>
+</head>
+<body>
+
+    <form>
+        <div>
+            <label for="inputPrenom">Prénom</label><br>
+            <input type="text" id="inputPrenom" name="prenom" placeholder="Entrez votre prénom ici" disabled value="Pierre">
+        </div>
+
+        <div>
+            <label for="inputEmail">Courriel</label><br>
+            <input type="email" id="inputEmail" name="email" 
+            value="moi@moi.com">
+        </div>
+
+        <div>
+            <label for="inputAge">Age</label><br>
+            <input type="number" id="inputAge" name="age" min="5" max="120"
+            step=".5">
+        </div>
+
+        <div>
+            <label for="inputDate">Date de naissance</label><br>
+            <input type="date" id="inputDate" name="dateNaissance" max="2020-01-31">
+        </div>
+
+        <div>
+            <input type="checkbox" id="inputCGV" name="cgv_ok" required>
+            <label for="inputCGV">J'accepte les conditions générales de vente</label>
+        </div>
+
+        <div>
+            <select name="ville">
+                <option value="1">Paris</option>
+                <option value="17">Perpignan</option>
+                <option value="28">Besançon</option>
+                <option value="43">Bézier</option>
+                <option value="67">Bernadets</option>
+            </select>
+        </div>
+
+        <input type="hidden" name="numSerie" value="123">
+
+        <div>
+            <button type="submit">Valider</button>
+        </div>
+    </form>
+    
+</body>
+</html>
