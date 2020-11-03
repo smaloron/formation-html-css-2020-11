@@ -45,18 +45,29 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 20px;
         }
+
+        .darkMode {
+            background-color: darkblue;
+        }
+
+        #intro .warning {
+            background-color: black;
+        }
     </style>
-</head>
+</head> 
 
 <body>
     <h1>Gros titre</h1>
-    <h6 class="warning">Petit titre</h6>
+    <h6 class="warning darkMode">Petit titre</h6>
     <div>
         <strong>tel</strong> : 01-65-45-98-12 <br>
         <em>email</em> : moi@moi.com
 
     </div>
-    <p id="intro">Pour créer une fonction on utilise l'instruction <code>function</code></p>
+    <p id="intro" class="warning">
+        Pour créer une fonction on utilise l'instruction 
+        <code class="warning">function</code>
+    </p>
 
     <p>
         Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine
