@@ -30,7 +30,7 @@
 
         p {
             text-align: justify;
-            font-size: 28px;
+            font-size: 1.8rem;
         }
 
         /* Cibler un id */
@@ -44,14 +44,30 @@
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
             font-size: 20px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color: red;
+            padding: 6px;
+            margin: 50px;
+            width: 200px;
         }
 
         .darkMode {
-            background-color: darkblue;
+            background-color: #030928;
         }
 
         #intro .warning {
             background-color: black;
+        }
+
+        #galerie {
+            width: 50%;
+            padding: 15px;
+            background-color: black;
+        }
+
+        img {
+            width: 25%;
         }
     </style>
 </head> 
@@ -64,7 +80,7 @@
         <em>email</em> : moi@moi.com
 
     </div>
-    <p id="intro" class="warning">
+    <p id="intro">
         Pour créer une fonction on utilise l'instruction 
         <code class="warning">function</code>
     </p>
@@ -98,8 +114,11 @@
 
     <a href="http://www.google.com" target="site">lien vers Google</a>
 
-    <img src="../images/HTML_logo.png" alt="logo html 5">
+    <div id="galerie">
+        <img src="../images/HTML_logo.png" alt="logo html 5">
+    </div>
 
+    <img src="../images/HTML_logo.png" alt="logo html 5">
 
     <!---------------------------------  
     --    Ici le tableau des prix    --
