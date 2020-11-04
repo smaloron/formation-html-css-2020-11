@@ -24,17 +24,17 @@
 			display: flex;
 			flex-direction: column;
 			width: 80%;
+			background-color: beige;
 		}
 
 		.intro {
-			flex-grow: 1;
 			width: 40%;
 			align-self: center;
 		}
 
 		.main {
 			flex-grow: 2;
-			width: 80%;
+			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -57,6 +57,30 @@
 		aside .wrapper {
 			display: flex;
 			justify-content: space-between;
+		}
+
+		@media screen and (max-width: 800px){
+			.main div {
+				width: 50%;
+			}
+
+			.intro {
+				width: 60%;
+			}
+		}
+
+		@media screen and (max-width: 500px){
+			.main div {
+				width: 100%;
+			}
+
+			.intro {
+				width: 80%;
+			}
+
+			aside {
+				display: none;
+			}
 		}
 
 	</style>
