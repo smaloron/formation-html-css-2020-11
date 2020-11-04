@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex intro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /*
+            justify-content: center;
+            height: 500px;
+            align-items: center;
+            border: 1px solid red;
+            padding: 5px;*/
+        }
+
+        .container div{
+            background-color: beige;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            /*flex: 1 1 20%; 
+            height: 50px;*/
+        }
+    </style>
+</head>
+<body>
+
+    <img src="/images/HTML_logo.png" style="display:none">
+    
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+</body>
+</html>
